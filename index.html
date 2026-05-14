@@ -3,18 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vishnu K | Performance Marketing Specialist</title>
-    <meta name="description" content="Portfolio of Vishnu K, Digital Marketing Executive and Meta Ads Specialist from Kerala, India.">
+    <title>Vishnu K | Performance Marketer & SEO Specialist</title>
     
-    <!-- Google Fonts: Inter & Outfit -->
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="I help local businesses generate leads and improve visibility through high-performing Meta Ads, SEO, and modern web strategies.">
+    <meta name="keywords" content="Performance Marketer, SEO Specialist, Meta Ads, Lead Generation, Local Business Growth, Kerala">
+    <meta name="author" content="Vishnu K">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Vishnu K | Mini Digital Agency">
+    <meta property="og:description" content="Helping local businesses generate leads through Meta Ads, SEO & content strategy.">
+    <meta property="og:type" content="website">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Vishnu K Performance Marketing",
+      "image": "",
+      "description": "Digital marketing and SEO specialist helping local businesses scale through data-driven campaigns.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Kerala",
+        "addressCountry": "IN"
+      }
+    }
+    </script>
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;900&display=swap" rel="stylesheet">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Tailwind Config for Custom Colors -->
     <script>
         tailwind.config = {
             darkMode: 'class',
@@ -25,28 +49,27 @@
                         display: ['Outfit', 'sans-serif'],
                     },
                     colors: {
-                        dark: '#050505',
-                        darker: '#020202',
-                        card: '#111111',
-                        border: '#222222',
-                        primary: '#8b5cf6', // Electric Purple
-                        secondary: '#3b82f6', // Blue
-                        accent: '#06b6d4', // Cyan
+                        dark: '#0B0F19',
+                        surface: '#111827',
+                        border: '#1F2937',
+                        primary: '#3B82F6', // Blue
+                        secondary: '#8B5CF6', // Purple
+                        text: '#F9FAFB',
+                        muted: '#9CA3AF',
                     },
                     animation: {
                         'float': 'float 6s ease-in-out infinite',
                         'float-delayed': 'float 6s ease-in-out 3s infinite',
-                        'spin-slow': 'spin 15s linear infinite',
-                        'pulse-glow': 'pulse-glow 3s ease-in-out infinite',
+                        'pulse-glow': 'pulse-glow 4s ease-in-out infinite',
                     },
                     keyframes: {
                         float: {
                             '0%, 100%': { transform: 'translateY(0)' },
-                            '50%': { transform: 'translateY(-20px)' },
+                            '50%': { transform: 'translateY(-15px)' },
                         },
                         'pulse-glow': {
-                            '0%, 100%': { opacity: 0.5, transform: 'scale(1)' },
-                            '50%': { opacity: 0.8, transform: 'scale(1.05)' },
+                            '0%, 100%': { opacity: 0.3, transform: 'scale(1)' },
+                            '50%': { opacity: 0.5, transform: 'scale(1.05)' },
                         }
                     }
                 }
@@ -60,32 +83,30 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-dark text-slate-200 antialiased selection:bg-primary/30 selection:text-white font-sans overflow-x-hidden relative">
+<body class="bg-dark text-text antialiased selection:bg-primary/30 selection:text-white font-sans overflow-x-hidden relative">
 
-    <!-- Custom Cursor Glow -->
-    <div class="cursor-glow fixed w-[600px] h-[600px] rounded-full blur-[120px] opacity-20 pointer-events-none z-0 transform -translate-x-1/2 -translate-y-1/2 transition-transform duration-500 ease-out" id="cursor-glow"></div>
+    <!-- Custom Cursor -->
+    <div class="cursor-glow fixed w-[500px] h-[500px] rounded-full blur-[100px] opacity-10 pointer-events-none z-0 transform -translate-x-1/2 -translate-y-1/2 transition-transform duration-500 ease-out" id="cursor-glow"></div>
     
-    <!-- Animated Background Gradients -->
+    <!-- Subtle Background Gradients -->
     <div class="fixed top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
-        <div class="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-primary/20 rounded-full blur-[150px] animate-pulse-glow"></div>
-        <div class="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-accent/20 rounded-full blur-[150px] animate-pulse-glow" style="animation-delay: 1.5s;"></div>
+        <div class="absolute top-[-20%] left-[-10%] w-[60%] h-[60%] bg-primary/10 rounded-full blur-[120px] animate-pulse-glow"></div>
+        <div class="absolute bottom-[-20%] right-[-10%] w-[60%] h-[60%] bg-secondary/10 rounded-full blur-[120px] animate-pulse-glow" style="animation-delay: 2s;"></div>
     </div>
 
-    <!-- Scroll Progress Indicator -->
-    <div class="fixed top-0 left-0 h-1 bg-gradient-to-r from-primary via-secondary to-accent z-50 transition-all duration-300 w-0" id="scroll-progress"></div>
-
     <!-- Floating Navbar -->
-    <nav class="fixed top-6 left-1/2 -translate-x-1/2 z-40 w-[90%] max-w-5xl glass-nav rounded-2xl border border-white/10 px-6 py-4 flex justify-between items-center transition-all duration-300">
-        <a href="#" class="text-2xl font-display font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent uppercase tracking-wider">
-            Vishnu K
+    <nav class="fixed top-6 left-1/2 -translate-x-1/2 z-40 w-[90%] max-w-6xl glass-nav rounded-2xl border border-white/5 px-6 py-4 flex justify-between items-center transition-all duration-300 shadow-xl">
+        <a href="#" class="text-2xl font-display font-bold text-white tracking-wide flex items-center gap-2">
+            <div class="w-8 h-8 rounded bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white text-sm">V</div>
+            ishnu K.
         </a>
         
         <!-- Desktop Menu -->
         <div class="hidden md:flex items-center space-x-8">
-            <a href="#about" class="text-sm font-medium hover:text-white transition-colors">About</a>
-            <a href="#experience" class="text-sm font-medium hover:text-white transition-colors">Experience</a>
-            <a href="#projects" class="text-sm font-medium hover:text-white transition-colors">Projects</a>
-            <a href="#contact" class="text-sm font-medium px-5 py-2 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 transition-all">Contact</a>
+            <a href="#services" class="text-sm font-medium text-muted hover:text-white transition-colors">Services</a>
+            <a href="#case-studies" class="text-sm font-medium text-muted hover:text-white transition-colors">Case Studies</a>
+            <a href="#about" class="text-sm font-medium text-muted hover:text-white transition-colors">About</a>
+            <a href="#contact" class="text-sm font-medium px-5 py-2 rounded-full bg-primary/10 hover:bg-primary/20 text-primary border border-primary/20 transition-all">Book Consultation</a>
         </div>
         
         <!-- Mobile Menu Toggle -->
@@ -95,454 +116,438 @@
     </nav>
 
     <!-- Mobile Menu -->
-    <div class="fixed inset-0 bg-dark/95 backdrop-blur-lg z-50 hidden flex-col items-center justify-center space-y-8 opacity-0 transition-opacity duration-300" id="mobile-menu">
+    <div class="fixed inset-0 bg-dark/95 backdrop-blur-xl z-50 hidden flex-col items-center justify-center space-y-8 opacity-0 transition-opacity duration-300" id="mobile-menu">
         <button class="absolute top-8 right-8 text-white focus:outline-none" id="close-menu-btn">
             <i data-lucide="x" class="w-8 h-8"></i>
         </button>
+        <a href="#services" class="text-2xl font-display font-medium mobile-link">Services</a>
+        <a href="#case-studies" class="text-2xl font-display font-medium mobile-link">Case Studies</a>
         <a href="#about" class="text-2xl font-display font-medium mobile-link">About</a>
-        <a href="#experience" class="text-2xl font-display font-medium mobile-link">Experience</a>
-        <a href="#projects" class="text-2xl font-display font-medium mobile-link">Projects</a>
-        <a href="#contact" class="text-2xl font-display font-medium text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent mobile-link">Contact</a>
+        <a href="#contact" class="text-2xl font-display font-medium text-primary mobile-link">Book Consultation</a>
     </div>
-
-    <!-- Floating Particles (Canvas rendered via JS) -->
-    <canvas id="particles" class="fixed inset-0 pointer-events-none z-0"></canvas>
 
     <main class="relative z-10">
         
         <!-- Hero Section -->
-        <section class="min-h-screen flex items-center justify-center pt-20 px-6 relative" id="home">
-            <div class="max-w-5xl mx-auto text-center reveal-up">
+        <section class="min-h-screen flex items-center pt-32 pb-16 px-6 relative" id="home">
+            <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
                 
-                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-panel border border-white/10 mb-8 mx-auto hover-magnetic">
-                    <span class="relative flex h-3 w-3">
-                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
-                      <span class="relative inline-flex rounded-full h-3 w-3 bg-accent"></span>
-                    </span>
-                    <span class="text-sm font-medium">Available for Freelance Projects</span>
-                </div>
-                
-                <h1 class="text-5xl md:text-7xl lg:text-8xl font-display font-black leading-tight tracking-tight mb-6 relative">
-                    <span class="block text-white">Driving Business</span>
-                    <span class="block text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-accent relative z-10 title-glow">
-                        Growth Through
-                    </span>
-                    <span class="block text-white">Performance Marketing</span>
-                </h1>
-                
-                <p class="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto font-light">
-                    Meta Ads Specialist | Performance Marketer | Creative Strategist
-                </p>
-                
-                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <a href="#projects" class="btn-primary group relative overflow-hidden rounded-full bg-white text-dark px-8 py-4 font-bold transition-all hover:scale-105">
-                        <span class="relative z-10">View Projects</span>
-                        <div class="absolute inset-0 h-full w-0 bg-gradient-to-r from-primary to-secondary transition-all duration-300 ease-out group-hover:w-full opacity-20"></div>
-                    </a>
-                    <a href="#contact" class="btn-secondary rounded-full glass-panel border border-white/20 text-white px-8 py-4 font-medium transition-all hover:bg-white/10 hover:scale-105">
-                        Hire Me
-                    </a>
+                <!-- Left: Content -->
+                <div class="reveal-up z-10">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full glass-panel border border-primary/20 bg-primary/5 mb-6 text-primary hover-magnetic">
+                        <span class="relative flex h-2 w-2">
+                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                          <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                        </span>
+                        <span class="text-xs font-semibold uppercase tracking-wider">Accepting New Clients</span>
+                    </div>
+                    
+                    <h1 class="text-5xl md:text-6xl lg:text-7xl font-display font-black leading-[1.1] tracking-tight mb-6 text-white">
+                        Performance Marketer & <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">SEO Specialist.</span>
+                    </h1>
+                    
+                    <p class="text-lg md:text-xl text-muted mb-10 max-w-xl font-light leading-relaxed">
+                        Helping local businesses generate highly qualified leads and scale revenue through data-driven Meta Ads, SEO, and conversion-focused content strategy.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row items-center gap-4">
+                        <a href="#case-studies" class="w-full sm:w-auto btn-primary group relative overflow-hidden rounded-xl bg-white text-surface px-8 py-4 font-semibold transition-all hover:scale-[1.02] text-center">
+                            <span class="relative z-10">View My Work</span>
+                            <div class="absolute inset-0 h-full w-0 bg-gradient-to-r from-primary to-secondary transition-all duration-300 ease-out group-hover:w-full opacity-10"></div>
+                        </a>
+                        <a href="https://wa.me/1234567890" target="_blank" rel="noopener" class="w-full sm:w-auto flex items-center justify-center gap-2 rounded-xl glass-panel border border-white/10 text-white px-8 py-4 font-medium transition-all hover:bg-white/5 hover:border-green-500/50 hover:text-green-400 group">
+                            <i data-lucide="message-circle" class="w-5 h-5 group-hover:scale-110 transition-transform"></i>
+                            Chat on WhatsApp
+                        </a>
+                    </div>
                 </div>
 
-                <!-- Social Icons -->
-                <div class="mt-16 flex items-center justify-center gap-6">
-                    <a href="#" class="w-12 h-12 rounded-full glass-panel flex items-center justify-center hover:text-primary transition-all hover:scale-110 hover:-translate-y-1">
-                        <i data-lucide="linkedin"></i>
-                    </a>
-                    <a href="#" class="w-12 h-12 rounded-full glass-panel flex items-center justify-center hover:text-secondary transition-all hover:scale-110 hover:-translate-y-1">
-                        <i data-lucide="instagram"></i>
-                    </a>
-                    <a href="#" class="w-12 h-12 rounded-full glass-panel flex items-center justify-center hover:text-red-500 transition-all hover:scale-110 hover:-translate-y-1">
-                        <i data-lucide="mail"></i>
-                    </a>
-                    <a href="#" class="w-12 h-12 rounded-full glass-panel flex items-center justify-center hover:text-green-500 transition-all hover:scale-110 hover:-translate-y-1">
-                        <i data-lucide="message-circle"></i> <!-- WhatsApp -->
-                    </a>
+                <!-- Right: Visual / Profile -->
+                <div class="relative reveal-left hidden lg:block h-full">
+                    <div class="relative w-full aspect-square max-w-md mx-auto">
+                        <!-- Abstract/Profile Image Container -->
+                        <div class="absolute inset-0 rounded-3xl bg-surface border border-white/5 overflow-hidden z-10 shadow-2xl">
+                            <!-- Placeholder image. Replace src with actual profile picture later -->
+                            <img src="https://images.unsplash.com/photo-1555421689-491a97ff2040?auto=format&fit=crop&q=80&w=800" alt="Vishnu K - Performance Marketer" loading="lazy" class="w-full h-full object-cover opacity-80 mix-blend-luminosity hover:mix-blend-normal transition-all duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+                        </div>
+                        
+                        <!-- Floating Stat Badges -->
+                        <div class="absolute -left-12 top-1/4 glass-panel border border-white/10 rounded-2xl p-4 z-20 animate-float shadow-xl flex items-center gap-4 hover-magnetic">
+                            <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+                                <i data-lucide="briefcase"></i>
+                            </div>
+                            <div>
+                                <p class="text-2xl font-bold text-white"><span class="counter" data-target="15">0</span>+</p>
+                                <p class="text-xs text-muted font-medium">Projects Delivered</p>
+                            </div>
+                        </div>
+
+                        <div class="absolute -right-8 top-1/2 glass-panel border border-white/10 rounded-2xl p-4 z-20 animate-float-delayed shadow-xl flex items-center gap-4 hover-magnetic">
+                            <div class="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center text-secondary">
+                                <i data-lucide="trending-up"></i>
+                            </div>
+                            <div>
+                                <p class="text-2xl font-bold text-white"><span class="counter" data-target="3">0</span>X</p>
+                                <p class="text-xs text-muted font-medium">Avg Lead Growth</p>
+                            </div>
+                        </div>
+
+                        <div class="absolute left-8 -bottom-6 glass-panel border border-white/10 rounded-2xl p-4 z-20 animate-float shadow-xl flex items-center gap-4 hover-magnetic">
+                            <div class="w-12 h-12 rounded-full bg-green-500/20 flex items-center justify-center text-green-400">
+                                <i data-lucide="indian-rupee"></i>
+                            </div>
+                            <div>
+                                <p class="text-2xl font-bold text-white"><span class="counter" data-target="2">0</span>L+</p>
+                                <p class="text-xs text-muted font-medium">Ad Spend Managed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Trusted By / Metrics Strip -->
+        <section class="py-12 border-y border-white/5 bg-surface/30 relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-white/10 reveal-up">
+                    <div class="p-4">
+                        <p class="text-4xl font-display font-bold text-white mb-2">+<span class="counter" data-target="220">0</span>%</p>
+                        <p class="text-sm text-primary font-medium uppercase tracking-wider">Instagram Reach</p>
+                    </div>
+                    <div class="p-4">
+                        <p class="text-4xl font-display font-bold text-white mb-2"><span class="counter" data-target="4">0</span>X</p>
+                        <p class="text-sm text-secondary font-medium uppercase tracking-wider">ROAS on Meta Ads</p>
+                    </div>
+                    <div class="p-4">
+                        <p class="text-4xl font-display font-bold text-white mb-2">+<span class="counter" data-target="35">0</span>%</p>
+                        <p class="text-sm text-green-400 font-medium uppercase tracking-wider">Website Leads</p>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <!-- Floating 3D Elements (CSS pseudo elements in style.css) -->
-            <div class="absolute top-1/4 left-[10%] w-24 h-24 rounded-2xl bg-gradient-to-br from-primary/30 to-transparent border border-primary/20 backdrop-blur-md animate-float hidden lg:block rotate-12"></div>
-            <div class="absolute bottom-1/4 right-[10%] w-32 h-32 rounded-full bg-gradient-to-tr from-accent/30 to-transparent border border-accent/20 backdrop-blur-md animate-float-delayed hidden lg:block"></div>
+        <!-- Services Section -->
+        <section class="py-32 px-6 relative" id="services">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-16 reveal-up gap-6">
+                    <div class="max-w-2xl">
+                        <h2 class="text-primary font-semibold tracking-wide uppercase text-sm mb-3">Capabilities</h2>
+                        <h3 class="text-4xl md:text-5xl font-display font-bold text-white leading-tight">Driving predictable revenue.</h3>
+                    </div>
+                    <p class="text-muted max-w-md text-sm md:text-base">I don't just run ads or do SEO. I build comprehensive systems designed to capture attention and convert it into paying customers.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 reveal-up">
+                    
+                    <!-- Service 1 -->
+                    <div class="glass-panel p-8 rounded-3xl border border-white/5 hover:border-primary/30 transition-all duration-300 group hover:-translate-y-2">
+                        <div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+                            <i data-lucide="mouse-pointer-click"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold text-white mb-4">Meta Ads</h4>
+                        <p class="text-muted text-sm leading-relaxed mb-6">
+                            Generate highly qualified leads through precision-targeted Facebook & Instagram campaigns optimized for lowest CPL and highest ROAS.
+                        </p>
+                        <ul class="space-y-3 text-sm text-gray-300">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-primary w-4 h-4"></i> A/B Testing Creatives</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-primary w-4 h-4"></i> Retargeting Funnels</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-primary w-4 h-4"></i> Pixel/CAPI Setup</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="glass-panel p-8 rounded-3xl border border-white/5 hover:border-secondary/30 transition-all duration-300 group hover:-translate-y-2">
+                        <div class="w-14 h-14 rounded-2xl bg-secondary/10 flex items-center justify-center text-secondary mb-6 group-hover:scale-110 transition-transform">
+                            <i data-lucide="search"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold text-white mb-4">SEO Strategy</h4>
+                        <p class="text-muted text-sm leading-relaxed mb-6">
+                            Rank your local business higher on Google search results. Capture high-intent organic traffic that is actively searching for your services.
+                        </p>
+                        <ul class="space-y-3 text-sm text-gray-300">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-secondary w-4 h-4"></i> GMB Optimization</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-secondary w-4 h-4"></i> Local Keyword Strategy</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-secondary w-4 h-4"></i> On-Page SEO</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="glass-panel p-8 rounded-3xl border border-white/5 hover:border-green-400/30 transition-all duration-300 group hover:-translate-y-2">
+                        <div class="w-14 h-14 rounded-2xl bg-green-500/10 flex items-center justify-center text-green-400 mb-6 group-hover:scale-110 transition-transform">
+                            <i data-lucide="share-2"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold text-white mb-4">Social Media Mgt</h4>
+                        <p class="text-muted text-sm leading-relaxed mb-6">
+                            Build long-term brand authority and consistent engagement. Turn your social profiles into trust-building assets that nurture leads.
+                        </p>
+                        <ul class="space-y-3 text-sm text-gray-300">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-green-400 w-4 h-4"></i> Content Calendar Setup</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-green-400 w-4 h-4"></i> Reel/Video Strategy</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-green-400 w-4 h-4"></i> Community Engagement</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Case Studies -->
+        <section class="py-32 px-6 bg-surface/50 border-y border-white/5 relative" id="case-studies">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-20 reveal-up">
+                    <h2 class="text-primary font-semibold tracking-wide uppercase text-sm mb-3">Proven Results</h2>
+                    <h3 class="text-4xl md:text-5xl font-display font-bold text-white mb-6">Featured Case Studies</h3>
+                    <p class="text-muted max-w-2xl mx-auto">Real numbers from real businesses. Here is how I've helped clients overcome stagnation and scale their lead generation.</p>
+                </div>
+
+                <div class="space-y-24">
+                    
+                    <!-- Case Study 1 -->
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center reveal-up">
+                        <div class="order-2 lg:order-1">
+                            <div class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-primary mb-4">Healthcare Sector</div>
+                            <h4 class="text-3xl font-display font-bold text-white mb-6">Scaling Nurse Hiring Leads for Daya Medical Centre</h4>
+                            
+                            <div class="space-y-6">
+                                <div>
+                                    <h5 class="text-white font-medium mb-2 flex items-center gap-2"><i data-lucide="alert-circle" class="w-4 h-4 text-muted"></i> The Problem</h5>
+                                    <p class="text-muted text-sm leading-relaxed">The client struggled to find qualified nursing staff locally, relying on slow, traditional hiring methods with high acquisition costs.</p>
+                                </div>
+                                <div>
+                                    <h5 class="text-white font-medium mb-2 flex items-center gap-2"><i data-lucide="crosshair" class="w-4 h-4 text-primary"></i> The Strategy</h5>
+                                    <p class="text-muted text-sm leading-relaxed">Implemented a highly targeted Meta Ads campaign focusing on specific healthcare demographics in Kerala, paired with rigorous A/B testing of ad creatives.</p>
+                                </div>
+                                <div class="p-6 rounded-2xl bg-primary/5 border border-primary/20">
+                                    <h5 class="text-white font-medium mb-3 flex items-center gap-2"><i data-lucide="bar-chart" class="w-4 h-4 text-primary"></i> The Results</h5>
+                                    <div class="grid grid-cols-2 gap-4">
+                                        <div>
+                                            <p class="text-3xl font-bold text-white">400+</p>
+                                            <p class="text-xs text-muted uppercase">Leads / Month</p>
+                                        </div>
+                                        <div>
+                                            <p class="text-3xl font-bold text-white">₹12</p>
+                                            <p class="text-xs text-muted uppercase">Avg Cost Per Lead</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-1 lg:order-2">
+                            <div class="rounded-3xl overflow-hidden border border-white/10 shadow-2xl relative group">
+                                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800" loading="lazy" alt="Analytics Dashboard" class="w-full h-auto transform group-hover:scale-105 transition-transform duration-700">
+                                <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent"></div>
+                                <div class="absolute bottom-6 left-6 flex gap-2">
+                                    <span class="px-3 py-1 text-xs font-medium bg-white/10 backdrop-blur-md rounded-full border border-white/10 text-white">Meta Ads</span>
+                                    <span class="px-3 py-1 text-xs font-medium bg-white/10 backdrop-blur-md rounded-full border border-white/10 text-white">A/B Testing</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Case Study 2 -->
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center reveal-up">
+                        <div>
+                            <div class="rounded-3xl overflow-hidden border border-white/10 shadow-2xl relative group">
+                                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=800" loading="lazy" alt="Local Business Marketing" class="w-full h-auto transform group-hover:scale-105 transition-transform duration-700">
+                                <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent"></div>
+                                <div class="absolute bottom-6 left-6 flex gap-2">
+                                    <span class="px-3 py-1 text-xs font-medium bg-white/10 backdrop-blur-md rounded-full border border-white/10 text-white">Local SEO</span>
+                                    <span class="px-3 py-1 text-xs font-medium bg-white/10 backdrop-blur-md rounded-full border border-white/10 text-white">GMB</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-secondary mb-4">Retail Sector</div>
+                            <h4 class="text-3xl font-display font-bold text-white mb-6">Dominating Local Search for Ramla Supermarket</h4>
+                            
+                            <div class="space-y-6">
+                                <div>
+                                    <h5 class="text-white font-medium mb-2 flex items-center gap-2"><i data-lucide="alert-circle" class="w-4 h-4 text-muted"></i> The Problem</h5>
+                                    <p class="text-muted text-sm leading-relaxed">Low footfall despite prime location. The business was practically invisible on Google Maps when locals searched for nearby supermarkets.</p>
+                                </div>
+                                <div>
+                                    <h5 class="text-white font-medium mb-2 flex items-center gap-2"><i data-lucide="crosshair" class="w-4 h-4 text-secondary"></i> The Strategy</h5>
+                                    <p class="text-muted text-sm leading-relaxed">Executed a massive Google My Business (GMB) optimization overhaul, acquired localized reviews, and integrated a WhatsApp CRM for retargeting loyal customers.</p>
+                                </div>
+                                <div class="p-6 rounded-2xl bg-secondary/5 border border-secondary/20">
+                                    <h5 class="text-white font-medium mb-3 flex items-center gap-2"><i data-lucide="bar-chart" class="w-4 h-4 text-secondary"></i> The Results</h5>
+                                    <div class="grid grid-cols-2 gap-4">
+                                        <div>
+                                            <p class="text-3xl font-bold text-white">Top 3</p>
+                                            <p class="text-xs text-muted uppercase">Google Maps Rank</p>
+                                        </div>
+                                        <div>
+                                            <p class="text-3xl font-bold text-white">35%</p>
+                                            <p class="text-xs text-muted uppercase">Increase in Footfall</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Tools & Tech Grid -->
+        <section class="py-20 px-6 relative">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12 reveal-up">
+                    <p class="text-sm text-muted font-medium uppercase tracking-widest mb-4">Powered by modern tools</p>
+                </div>
+                <!-- Dense, clean grid for tools -->
+                <div class="flex flex-wrap justify-center gap-4 md:gap-8 opacity-60 grayscale hover:grayscale-0 transition-all duration-500 reveal-up">
+                    <div class="flex items-center gap-2 glass-panel px-6 py-3 rounded-full border border-white/5">
+                        <i data-lucide="facebook" class="w-5 h-5"></i><span class="text-sm font-medium">Meta Ads</span>
+                    </div>
+                    <div class="flex items-center gap-2 glass-panel px-6 py-3 rounded-full border border-white/5">
+                        <i data-lucide="search" class="w-5 h-5"></i><span class="text-sm font-medium">Google Ads</span>
+                    </div>
+                    <div class="flex items-center gap-2 glass-panel px-6 py-3 rounded-full border border-white/5">
+                        <i data-lucide="bar-chart-2" class="w-5 h-5"></i><span class="text-sm font-medium">Google Analytics</span>
+                    </div>
+                    <div class="flex items-center gap-2 glass-panel px-6 py-3 rounded-full border border-white/5">
+                        <i data-lucide="message-square" class="w-5 h-5"></i><span class="text-sm font-medium">WhatsApp CRM</span>
+                    </div>
+                    <div class="flex items-center gap-2 glass-panel px-6 py-3 rounded-full border border-white/5">
+                        <i data-lucide="pen-tool" class="w-5 h-5"></i><span class="text-sm font-medium">Canva</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="py-24 px-6 relative border-t border-white/5">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16 reveal-up">
+                    <h2 class="text-primary font-semibold tracking-wide uppercase text-sm mb-3">Testimonials</h2>
+                    <h3 class="text-4xl md:text-5xl font-display font-bold text-white">Client Success Stories</h3>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 reveal-up">
+                    <!-- Testimonial 1 -->
+                    <div class="glass-panel p-8 rounded-3xl border border-white/5 flex flex-col justify-between">
+                        <div>
+                            <div class="flex gap-1 text-primary mb-6">
+                                <i data-lucide="star" class="w-4 h-4 fill-primary"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-primary"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-primary"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-primary"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-primary"></i>
+                            </div>
+                            <p class="text-white text-base leading-relaxed mb-8">"Vishnu completely transformed our hiring pipeline. Before working with him, we struggled to get candidates. Now, we have a steady stream of qualified nurse leads every single month."</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-surface rounded-full overflow-hidden border border-white/10">
+                                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=200" alt="Client" class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <p class="text-white font-bold text-sm">Dr. Arun Kumar</p>
+                                <p class="text-muted text-xs">Director, Daya Medical</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="glass-panel p-8 rounded-3xl border border-white/5 flex flex-col justify-between">
+                        <div>
+                            <div class="flex gap-1 text-primary mb-6">
+                                <i data-lucide="star" class="w-4 h-4 fill-primary"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-primary"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-primary"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-primary"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-primary"></i>
+                            </div>
+                            <p class="text-white text-base leading-relaxed mb-8">"Our foot traffic increased dramatically within two months of implementing his local SEO and Meta Ads strategy. Highly recommend his data-driven approach."</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-surface rounded-full overflow-hidden border border-white/10">
+                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=200" alt="Client" class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <p class="text-white font-bold text-sm">Ramla Ibrahim</p>
+                                <p class="text-muted text-xs">Owner, Ramla Supermarket</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="glass-panel p-8 rounded-3xl border border-white/5 flex flex-col justify-between">
+                        <div>
+                            <div class="flex gap-1 text-primary mb-6">
+                                <i data-lucide="star" class="w-4 h-4 fill-primary"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-primary"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-primary"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-primary"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-primary"></i>
+                            </div>
+                            <p class="text-white text-base leading-relaxed mb-8">"Vishnu handled our entire social media presence and ad campaigns. Our organic engagement shot up by 20%, and we saw immediate ROI from the ad spend."</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-surface rounded-full overflow-hidden border border-white/10">
+                                <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=200" alt="Client" class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <p class="text-white font-bold text-sm">Thomas George</p>
+                                <p class="text-muted text-xs">Amor Business Solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- About Section -->
-        <section class="py-24 px-6 relative" id="about">
-            <div class="max-w-6xl mx-auto">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                    <div class="reveal-left">
-                        <h2 class="text-sm font-bold text-primary uppercase tracking-widest mb-2">Introduction</h2>
-                        <h3 class="text-4xl md:text-5xl font-display font-bold text-white mb-6">Hello, I'm Vishnu K</h3>
-                        <div class="glass-panel p-8 rounded-2xl border border-white/10 relative overflow-hidden group">
-                            <div class="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                            <p class="text-slate-300 text-lg leading-relaxed mb-4 relative z-10">
-                                A highly driven Digital Marketing Executive with extensive experience in Meta Ads, Google Ads, local business marketing, and high-quality lead generation.
-                            </p>
-                            <p class="text-slate-300 text-lg leading-relaxed relative z-10">
-                                I specialize in utilizing data-driven strategies to optimize Cost Per Lead (CPL) and maximize ROI, transforming marketing budgets into measurable business growth.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 reveal-right">
-                        <!-- Stat Card 1 -->
-                        <div class="glass-panel p-8 rounded-2xl border border-white/10 hover:-translate-y-2 transition-transform duration-300 stat-card">
-                            <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mb-4 text-primary">
-                                <i data-lucide="users"></i>
-                            </div>
-                            <div class="text-4xl font-display font-bold text-white mb-2"><span class="counter" data-target="400">0</span>+</div>
-                            <div class="text-sm text-slate-400">Leads Generated / Month</div>
-                        </div>
-                        
-                        <!-- Stat Card 2 -->
-                        <div class="glass-panel p-8 rounded-2xl border border-white/10 hover:-translate-y-2 transition-transform duration-300 stat-card mt-0 sm:mt-12">
-                            <div class="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center mb-4 text-accent">
-                                <i data-lucide="trending-down"></i>
-                            </div>
-                            <div class="text-4xl font-display font-bold text-white mb-2">₹<span class="counter" data-target="12">0</span></div>
-                            <div class="text-sm text-slate-400">Average CPL Optimized</div>
-                        </div>
-
-                        <!-- Stat Card 3 -->
-                        <div class="glass-panel p-8 rounded-2xl border border-white/10 hover:-translate-y-2 transition-transform duration-300 stat-card sm:col-span-2">
-                            <div class="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center mb-4 text-secondary">
-                                <i data-lucide="briefcase"></i>
-                            </div>
-                            <div class="text-2xl font-display font-bold text-white mb-2">Multiple Campaigns</div>
-                            <div class="text-sm text-slate-400">Successfully Managed Across Niches</div>
-                        </div>
-                    </div>
+        <section class="py-32 px-6 bg-surface/30 relative" id="about">
+            <div class="max-w-4xl mx-auto text-center reveal-up">
+                <div class="w-24 h-24 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-3xl text-white font-display font-bold mx-auto mb-8 shadow-lg shadow-primary/20">
+                    VK
                 </div>
-            </div>
-        </section>
-
-        <!-- Experience Timeline -->
-        <section class="py-24 px-6 relative" id="experience">
-            <div class="max-w-4xl mx-auto">
-                <div class="text-center mb-16 reveal-up">
-                    <h2 class="text-sm font-bold text-primary uppercase tracking-widest mb-2">Career Journey</h2>
-                    <h3 class="text-4xl md:text-5xl font-display font-bold text-white">Experience</h3>
-                </div>
-
-                <div class="relative timeline-container">
-                    <!-- Timeline Line -->
-                    <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 top-0 bottom-0 w-px bg-white/10"></div>
-                    
-                    <!-- Timeline Items -->
-                    <!-- Item 1 -->
-                    <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group mb-12 timeline-item">
-                        <div class="hidden md:block md:w-1/2"></div>
-                        <div class="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-dark border-2 border-primary z-10 group-hover:scale-150 transition-transform duration-300 timeline-dot"></div>
-                        <div class="w-full pl-8 md:pl-0 md:w-1/2 md:odd:pr-12 md:even:pl-12 reveal-up">
-                            <div class="glass-panel p-8 rounded-2xl border border-white/10 hover:border-primary/50 transition-colors duration-300 relative overflow-hidden">
-                                <div class="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full blur-[50px] -translate-y-1/2 translate-x-1/2"></div>
-                                <div class="text-sm font-medium text-primary mb-1">Amor Business Solutions</div>
-                                <h4 class="text-xl font-bold text-white mb-4">Meta Ads Specialist</h4>
-                                <ul class="space-y-2 text-slate-400 text-sm">
-                                    <li class="flex items-start gap-2">
-                                        <i data-lucide="check-circle" class="w-4 h-4 text-primary mt-1 shrink-0"></i>
-                                        <span>Managed high-performing Meta Ads campaigns</span>
-                                    </li>
-                                    <li class="flex items-start gap-2">
-                                        <i data-lucide="check-circle" class="w-4 h-4 text-primary mt-1 shrink-0"></i>
-                                        <span>Increased overall engagement by 20%</span>
-                                    </li>
-                                    <li class="flex items-start gap-2">
-                                        <i data-lucide="check-circle" class="w-4 h-4 text-primary mt-1 shrink-0"></i>
-                                        <span>Created compelling social media content & reels</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Item 2 -->
-                    <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group mb-12 timeline-item">
-                        <div class="hidden md:block md:w-1/2"></div>
-                        <div class="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-dark border-2 border-secondary z-10 group-hover:scale-150 transition-transform duration-300 timeline-dot"></div>
-                        <div class="w-full pl-8 md:pl-0 md:w-1/2 md:odd:pr-12 md:even:pl-12 reveal-up">
-                            <div class="glass-panel p-8 rounded-2xl border border-white/10 hover:border-secondary/50 transition-colors duration-300 relative overflow-hidden">
-                                <div class="absolute top-0 right-0 w-32 h-32 bg-secondary/10 rounded-full blur-[50px] -translate-y-1/2 translate-x-1/2"></div>
-                                <div class="text-sm font-medium text-secondary mb-1">Daya Medical Centre</div>
-                                <h4 class="text-xl font-bold text-white mb-4">Performance Marketer</h4>
-                                <ul class="space-y-2 text-slate-400 text-sm">
-                                    <li class="flex items-start gap-2">
-                                        <i data-lucide="check-circle" class="w-4 h-4 text-secondary mt-1 shrink-0"></i>
-                                        <span>Generated 400+ nurse hiring leads per month</span>
-                                    </li>
-                                    <li class="flex items-start gap-2">
-                                        <i data-lucide="check-circle" class="w-4 h-4 text-secondary mt-1 shrink-0"></i>
-                                        <span>Optimized campaigns rigorously through A/B testing</span>
-                                    </li>
-                                    <li class="flex items-start gap-2">
-                                        <i data-lucide="check-circle" class="w-4 h-4 text-secondary mt-1 shrink-0"></i>
-                                        <span>Designed specific healthcare marketing creatives</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Item 3 -->
-                    <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group timeline-item">
-                        <div class="hidden md:block md:w-1/2"></div>
-                        <div class="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-dark border-2 border-accent z-10 group-hover:scale-150 transition-transform duration-300 timeline-dot"></div>
-                        <div class="w-full pl-8 md:pl-0 md:w-1/2 md:odd:pr-12 md:even:pl-12 reveal-up">
-                            <div class="glass-panel p-8 rounded-2xl border border-white/10 hover:border-accent/50 transition-colors duration-300 relative overflow-hidden">
-                                <div class="absolute top-0 right-0 w-32 h-32 bg-accent/10 rounded-full blur-[50px] -translate-y-1/2 translate-x-1/2"></div>
-                                <div class="text-sm font-medium text-accent mb-1">Freelance</div>
-                                <h4 class="text-xl font-bold text-white mb-4">Digital Marketing Consultant</h4>
-                                <p class="text-sm text-slate-300 mb-3">Key Projects: Ramla Supermarket, Ramla Mobiles, Nature Villa Homestay Kochi</p>
-                                <ul class="space-y-2 text-slate-400 text-sm">
-                                    <li class="flex items-start gap-2">
-                                        <i data-lucide="check-circle" class="w-4 h-4 text-accent mt-1 shrink-0"></i>
-                                        <span>Google Ads Management</span>
-                                    </li>
-                                    <li class="flex items-start gap-2">
-                                        <i data-lucide="check-circle" class="w-4 h-4 text-accent mt-1 shrink-0"></i>
-                                        <span>Google My Business (GMB) Optimization</span>
-                                    </li>
-                                    <li class="flex items-start gap-2">
-                                        <i data-lucide="check-circle" class="w-4 h-4 text-accent mt-1 shrink-0"></i>
-                                        <span>WhatsApp CRM Integrations</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section class="py-24 px-6 relative" id="skills">
-            <div class="max-w-6xl mx-auto">
-                <div class="text-center mb-16 reveal-up">
-                    <h2 class="text-sm font-bold text-primary uppercase tracking-widest mb-2">Expertise</h2>
-                    <h3 class="text-4xl md:text-5xl font-display font-bold text-white">Core Skills</h3>
-                </div>
-
-                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 reveal-up" id="skills-grid">
-                    <!-- Populated by JS -->
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Showcase -->
-        <section class="py-24 px-6 relative" id="projects">
-            <div class="max-w-6xl mx-auto">
-                <div class="text-center mb-16 reveal-up">
-                    <h2 class="text-sm font-bold text-primary uppercase tracking-widest mb-2">Portfolio</h2>
-                    <h3 class="text-4xl md:text-5xl font-display font-bold text-white">Featured Projects</h3>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 reveal-up">
-                    
-                    <!-- Project 1 -->
-                    <div class="glass-panel rounded-3xl border border-white/10 overflow-hidden group cursor-pointer hover:border-primary/50 transition-all duration-500 hover:-translate-y-2">
-                        <div class="h-64 bg-darker relative overflow-hidden">
-                            <div class="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent"></div>
-                            <!-- Mockup visual representation -->
-                            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[120%] bg-card rounded-t-xl border border-white/10 shadow-2xl transition-transform duration-500 group-hover:scale-105 flex flex-col p-4">
-                                <div class="flex gap-2 mb-4">
-                                    <div class="w-3 h-3 rounded-full bg-red-500/50"></div>
-                                    <div class="w-3 h-3 rounded-full bg-yellow-500/50"></div>
-                                    <div class="w-3 h-3 rounded-full bg-green-500/50"></div>
-                                </div>
-                                <div class="w-full h-1/2 rounded bg-white/5 mb-4"></div>
-                                <div class="w-3/4 h-4 rounded bg-white/5 mb-2"></div>
-                                <div class="w-1/2 h-4 rounded bg-white/5"></div>
-                            </div>
-                        </div>
-                        <div class="p-8">
-                            <div class="flex justify-between items-start mb-4">
-                                <div>
-                                    <h4 class="text-2xl font-bold text-white mb-2">Healthcare Lead Gen</h4>
-                                    <p class="text-primary text-sm font-medium">Daya Medical Centre</p>
-                                </div>
-                                <div class="w-10 h-10 rounded-full glass-panel flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
-                                    <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
-                                </div>
-                            </div>
-                            <div class="mb-4">
-                                <p class="text-slate-400 text-sm"><strong class="text-slate-200">Strategy:</strong> Rigorous A/B testing on ad creatives targeting specific healthcare demographics.</p>
-                            </div>
-                            <div>
-                                <p class="text-slate-400 text-sm"><strong class="text-accent">Results:</strong> Generated 400+ nurse hiring leads per month consistently.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 2 -->
-                    <div class="glass-panel rounded-3xl border border-white/10 overflow-hidden group cursor-pointer hover:border-secondary/50 transition-all duration-500 hover:-translate-y-2">
-                        <div class="h-64 bg-darker relative overflow-hidden">
-                            <div class="absolute inset-0 bg-gradient-to-br from-secondary/20 to-transparent"></div>
-                            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[120%] bg-card rounded-t-xl border border-white/10 shadow-2xl transition-transform duration-500 group-hover:scale-105 flex items-center justify-center p-4">
-                                <div class="grid grid-cols-2 gap-4 w-full h-full">
-                                    <div class="rounded bg-white/5 h-full"></div>
-                                    <div class="rounded bg-white/5 h-full"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="p-8">
-                            <div class="flex justify-between items-start mb-4">
-                                <div>
-                                    <h4 class="text-2xl font-bold text-white mb-2">Local Business Growth</h4>
-                                    <p class="text-secondary text-sm font-medium">Ramla Supermarket & Mobiles</p>
-                                </div>
-                                <div class="w-10 h-10 rounded-full glass-panel flex items-center justify-center group-hover:bg-secondary group-hover:text-white transition-colors">
-                                    <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
-                                </div>
-                            </div>
-                            <div class="mb-4">
-                                <p class="text-slate-400 text-sm"><strong class="text-slate-200">Strategy:</strong> Meta Ads combined with GMB optimization for extreme local relevance.</p>
-                            </div>
-                            <div>
-                                <p class="text-slate-400 text-sm"><strong class="text-accent">Results:</strong> Drastically improved footfall and integrated WhatsApp CRM for retargeting.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 3 -->
-                    <div class="glass-panel rounded-3xl border border-white/10 overflow-hidden group cursor-pointer hover:border-accent/50 transition-all duration-500 hover:-translate-y-2">
-                        <div class="h-64 bg-darker relative overflow-hidden">
-                            <div class="absolute inset-0 bg-gradient-to-tr from-accent/20 to-transparent"></div>
-                            <div class="absolute top-[20%] left-1/2 -translate-x-1/2 w-[60%] h-full bg-card rounded-t-3xl border border-white/10 shadow-2xl transition-transform duration-500 group-hover:-translate-y-4">
-                                <div class="w-1/2 h-1 bg-white/20 mx-auto mt-4 rounded-full"></div>
-                                <div class="p-4 space-y-4 mt-4">
-                                    <div class="w-full h-24 rounded-xl bg-white/5"></div>
-                                    <div class="w-full h-24 rounded-xl bg-white/5"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="p-8">
-                            <div class="flex justify-between items-start mb-4">
-                                <div>
-                                    <h4 class="text-2xl font-bold text-white mb-2">Homestay Marketing</h4>
-                                    <p class="text-accent text-sm font-medium">Nature Villa Homestay</p>
-                                </div>
-                                <div class="w-10 h-10 rounded-full glass-panel flex items-center justify-center group-hover:bg-accent group-hover:text-white transition-colors">
-                                    <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
-                                </div>
-                            </div>
-                            <div class="mb-4">
-                                <p class="text-slate-400 text-sm"><strong class="text-slate-200">Strategy:</strong> Highly targeted Google Ads focusing on tourism intent keywords in Kochi.</p>
-                            </div>
-                            <div>
-                                <p class="text-slate-400 text-sm"><strong class="text-accent">Results:</strong> Sustained high booking rates and lower acquisition costs.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 4 -->
-                    <div class="glass-panel rounded-3xl border border-white/10 overflow-hidden group cursor-pointer hover:border-primary/50 transition-all duration-500 hover:-translate-y-2">
-                        <div class="h-64 bg-darker relative overflow-hidden">
-                            <div class="absolute inset-0 bg-gradient-to-tl from-primary/20 to-secondary/20"></div>
-                            <div class="absolute inset-0 flex flex-wrap gap-2 p-8 justify-center items-center transition-transform duration-500 group-hover:scale-110">
-                                <div class="w-12 h-12 rounded bg-white/10 rotate-12"></div>
-                                <div class="w-16 h-16 rounded-full bg-white/10 -rotate-12"></div>
-                                <div class="w-14 h-14 rounded-xl bg-white/10 rotate-45"></div>
-                            </div>
-                        </div>
-                        <div class="p-8">
-                            <div class="flex justify-between items-start mb-4">
-                                <div>
-                                    <h4 class="text-2xl font-bold text-white mb-2">Social Creative Strategy</h4>
-                                    <p class="text-primary text-sm font-medium">Amor Business Solutions</p>
-                                </div>
-                                <div class="w-10 h-10 rounded-full glass-panel flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
-                                    <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
-                                </div>
-                            </div>
-                            <div class="mb-4">
-                                <p class="text-slate-400 text-sm"><strong class="text-slate-200">Strategy:</strong> End-to-end conceptualization of social media content and reels.</p>
-                            </div>
-                            <div>
-                                <p class="text-slate-400 text-sm"><strong class="text-accent">Results:</strong> Boosted overall page engagement by 20% organically.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Certifications -->
-        <section class="py-24 px-6 relative overflow-hidden">
-            <div class="max-w-6xl mx-auto text-center reveal-up">
-                <h3 class="text-3xl font-display font-bold text-white mb-12">Certifications</h3>
+                <h3 class="text-3xl md:text-4xl font-display font-bold text-white mb-8">Building digital engines that drive real business growth.</h3>
+                <p class="text-lg text-muted leading-relaxed mb-6">
+                    I am Vishnu K. I help businesses improve visibility and generate customers using performance marketing, SEO, and modern web strategies. I don't just focus on "vanity metrics" like likes or impressions; my primary goal is lowering your Cost Per Acquisition (CPA) and increasing your Return On Ad Spend (ROAS).
+                </p>
+                <p class="text-lg text-muted leading-relaxed mb-12">
+                    Based in Kerala, India, I've worked across multiple niches—from healthcare to retail—creating scalable marketing systems that work reliably.
+                </p>
                 
-                <div class="flex flex-wrap justify-center gap-6">
-                    <div class="glass-panel px-8 py-6 rounded-2xl border border-white/10 flex items-center gap-4 hover:border-primary/50 transition-all hover:-translate-y-1">
-                        <i data-lucide="award" class="text-primary w-8 h-8"></i>
-                        <span class="font-medium text-white">Google Digital Marketing</span>
-                    </div>
-                    <div class="glass-panel px-8 py-6 rounded-2xl border border-white/10 flex items-center gap-4 hover:border-secondary/50 transition-all hover:-translate-y-1">
-                        <i data-lucide="award" class="text-secondary w-8 h-8"></i>
-                        <span class="font-medium text-white">HubSpot Certification</span>
-                    </div>
-                    <div class="glass-panel px-8 py-6 rounded-2xl border border-white/10 flex items-center gap-4 hover:border-accent/50 transition-all hover:-translate-y-1">
-                        <i data-lucide="award" class="text-accent w-8 h-8"></i>
-                        <span class="font-medium text-white">SEMrush Certification</span>
-                    </div>
+                <!-- Certs inline -->
+                <div class="flex flex-wrap justify-center gap-4">
+                    <span class="px-4 py-2 rounded-full border border-white/10 text-xs font-semibold text-white bg-white/5"><i data-lucide="award" class="inline w-3 h-3 mr-1"></i> Google Certified</span>
+                    <span class="px-4 py-2 rounded-full border border-white/10 text-xs font-semibold text-white bg-white/5"><i data-lucide="award" class="inline w-3 h-3 mr-1"></i> HubSpot Certified</span>
+                    <span class="px-4 py-2 rounded-full border border-white/10 text-xs font-semibold text-white bg-white/5"><i data-lucide="award" class="inline w-3 h-3 mr-1"></i> SEMrush Certified</span>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section class="py-24 px-6 relative" id="contact">
-            <div class="max-w-4xl mx-auto reveal-up">
-                <div class="glass-panel rounded-3xl border border-white/10 p-8 md:p-12 relative overflow-hidden">
-                    <div class="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full blur-[80px] -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
-                    <div class="absolute bottom-0 left-0 w-64 h-64 bg-accent/20 rounded-full blur-[80px] translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
+        <!-- CTA / Contact Section -->
+        <section class="py-32 px-6 relative" id="contact">
+            <div class="max-w-5xl mx-auto reveal-up">
+                <div class="glass-panel rounded-[2.5rem] border border-white/10 p-10 md:p-16 relative overflow-hidden text-center">
+                    <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/20 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/3 pointer-events-none"></div>
+                    <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-secondary/20 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/3 pointer-events-none"></div>
                     
-                    <div class="text-center mb-12 relative z-10">
-                        <h2 class="text-4xl md:text-5xl font-display font-bold text-white mb-4">Let's Work Together</h2>
-                        <p class="text-slate-400">Ready to scale your business with performance marketing?</p>
-                    </div>
-
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 relative z-10">
-                        <div>
-                            <form class="space-y-6">
-                                <div>
-                                    <label class="block text-sm font-medium text-slate-400 mb-2">Name</label>
-                                    <input type="text" class="w-full bg-dark/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-primary/50 transition-colors" placeholder="John Doe">
-                                </div>
-                                <div>
-                                    <label class="block text-sm font-medium text-slate-400 mb-2">Email</label>
-                                    <input type="email" class="w-full bg-dark/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-primary/50 transition-colors" placeholder="john@example.com">
-                                </div>
-                                <div>
-                                    <label class="block text-sm font-medium text-slate-400 mb-2">Message</label>
-                                    <textarea rows="4" class="w-full bg-dark/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-primary/50 transition-colors" placeholder="Tell me about your project..."></textarea>
-                                </div>
-                                <button type="button" class="w-full btn-primary relative overflow-hidden rounded-xl bg-white text-dark px-8 py-4 font-bold transition-all hover:scale-[1.02] group">
-                                    <span class="relative z-10">Send Message</span>
-                                    <div class="absolute inset-0 h-full w-0 bg-gradient-to-r from-primary to-secondary transition-all duration-300 ease-out group-hover:w-full opacity-20"></div>
-                                </button>
-                            </form>
+                    <div class="relative z-10 max-w-2xl mx-auto">
+                        <h2 class="text-4xl md:text-6xl font-display font-black text-white mb-6">Ready to scale your leads?</h2>
+                        <p class="text-lg text-muted mb-10">Stop wasting ad spend. Let's build a data-driven marketing machine for your business. Book a free discovery call or message me directly.</p>
+                        
+                        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                            <a href="#" class="w-full sm:w-auto btn-primary relative overflow-hidden rounded-xl bg-white text-surface px-10 py-5 font-bold transition-all hover:scale-[1.02] group">
+                                <span class="relative z-10 flex items-center gap-2">Book Free Consultation <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+                            </a>
+                            <a href="https://wa.me/1234567890" target="_blank" rel="noopener" class="w-full sm:w-auto flex items-center justify-center gap-2 rounded-xl glass-panel border border-white/10 text-white px-10 py-5 font-medium transition-all hover:bg-white/5 hover:border-green-500/50 hover:text-green-400">
+                                <i data-lucide="message-circle" class="w-5 h-5"></i>
+                                WhatsApp Me
+                            </a>
                         </div>
                         
-                        <div class="flex flex-col justify-center space-y-6">
-                            <a href="#" class="flex items-center gap-4 glass-panel p-6 rounded-2xl border border-white/10 hover:border-green-500/50 transition-all group">
-                                <div class="w-12 h-12 rounded-full bg-green-500/10 flex items-center justify-center text-green-500 group-hover:scale-110 transition-transform">
-                                    <i data-lucide="message-circle"></i>
-                                </div>
-                                <div>
-                                    <h4 class="text-white font-medium mb-1">WhatsApp</h4>
-                                    <p class="text-sm text-slate-400">Quick chat about your project</p>
-                                </div>
-                            </a>
-                            
-                            <a href="#" class="flex items-center gap-4 glass-panel p-6 rounded-2xl border border-white/10 hover:border-primary/50 transition-all group">
-                                <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
-                                    <i data-lucide="mail"></i>
-                                </div>
-                                <div>
-                                    <h4 class="text-white font-medium mb-1">Email Me</h4>
-                                    <p class="text-sm text-slate-400">hello@vishnuk.com</p>
-                                </div>
-                            </a>
+                        <div class="mt-12 flex items-center justify-center gap-6 text-muted">
+                            <a href="#" class="hover:text-white transition-colors"><i data-lucide="linkedin"></i></a>
+                            <a href="#" class="hover:text-white transition-colors"><i data-lucide="instagram"></i></a>
+                            <a href="mailto:hello@vishnuk.com" class="hover:text-white transition-colors"><i data-lucide="mail"></i></a>
                         </div>
                     </div>
                 </div>
@@ -550,11 +555,16 @@
         </section>
 
         <!-- Footer -->
-        <footer class="py-8 text-center border-t border-white/5 relative z-10">
-            <p class="text-slate-500 text-sm">© 2026 Vishnu K. Designed with AntiGravity Aesthetic.</p>
+        <footer class="py-10 text-center border-t border-white/5 relative z-10 bg-surface/50">
+            <p class="text-muted text-sm font-medium">© 2026 Vishnu K. Performance Marketing.</p>
         </footer>
 
     </main>
+
+    <!-- Floating WhatsApp Action -->
+    <a href="https://wa.me/1234567890" target="_blank" rel="noopener" class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-green-500 text-white rounded-full flex items-center justify-center shadow-lg shadow-green-500/30 hover:scale-110 transition-transform hover-magnetic">
+        <i data-lucide="message-circle" class="w-6 h-6"></i>
+    </a>
 
     <script src="script.js"></script>
     <script>

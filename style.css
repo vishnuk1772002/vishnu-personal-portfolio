@@ -1,10 +1,10 @@
-/* AntiGravity Aesthetic Custom CSS */
+/* Mini-Agency Portfolio CSS */
 
 :root {
-    --primary: 139, 92, 246; /* #8b5cf6 */
-    --secondary: 59, 130, 246; /* #3b82f6 */
-    --accent: 6, 182, 212; /* #06b6d4 */
-    --dark: 5, 5, 5;
+    --primary: 59, 130, 246; /* #3B82F6 */
+    --secondary: 139, 92, 246; /* #8B5CF6 */
+    --dark: 11, 15, 25; /* #0B0F19 */
+    --surface: 17, 24, 39; /* #111827 */
 }
 
 body {
@@ -20,20 +20,15 @@ body::-webkit-scrollbar {
 
 /* Glassmorphism Panels */
 .glass-panel {
-    background: rgba(255, 255, 255, 0.03);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 }
 
 .glass-nav {
-    background: rgba(5, 5, 5, 0.7);
+    background: rgba(11, 15, 25, 0.8);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-}
-
-/* Typography Enhancements */
-.title-glow {
-    text-shadow: 0 0 40px rgba(var(--primary), 0.5), 0 0 80px rgba(var(--secondary), 0.3);
 }
 
 /* Magnetic Hover Effect Utility */
@@ -47,58 +42,19 @@ body::-webkit-scrollbar {
     will-change: transform, opacity;
 }
 
-.reveal-up { transform: translateY(40px); }
-.reveal-left { transform: translateX(-40px); }
-.reveal-right { transform: translateX(40px); }
+.reveal-up { transform: translateY(30px); }
+.reveal-left { transform: translateX(-30px); }
+.reveal-right { transform: translateX(30px); }
 
 .reveal-up.active, .reveal-left.active, .reveal-right.active {
     opacity: 1;
     transform: translate(0);
-    transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+    transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
-/* Skill Cards Glow */
-.skill-card {
-    position: relative;
-}
-
-.skill-card::before {
-    content: '';
-    position: absolute;
-    inset: -1px;
-    border-radius: inherit;
-    background: linear-gradient(to right, rgba(var(--primary), 0.5), rgba(var(--accent), 0.5));
-    z-index: -1;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.skill-card:hover::before {
-    opacity: 1;
-}
-
-/* Timeline Custom Styles */
-.timeline-container::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    width: 2px;
-    background: linear-gradient(to bottom, transparent, rgba(255,255,255,0.1) 10%, rgba(255,255,255,0.1) 90%, transparent);
-    transform: translateX(-50%);
-}
-
-@media (max-width: 768px) {
-    .timeline-container::before {
-        left: 0;
-        transform: none;
-    }
-}
-
-/* Glowing cursor dot for when mouse is down or interacting */
+/* Glowing cursor dot */
 .cursor-glow.active {
     transform: translate(-50%, -50%) scale(0.8);
-    opacity: 0.4;
-    background: radial-gradient(circle, rgba(var(--primary), 0.8) 0%, rgba(var(--accent), 0) 70%);
+    opacity: 0.3;
+    background: radial-gradient(circle, rgba(var(--primary), 0.6) 0%, rgba(var(--primary), 0) 60%);
 }
